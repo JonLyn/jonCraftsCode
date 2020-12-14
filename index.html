@@ -1,26 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.scss" />
+    <script
+      src="https://kit.fontawesome.com/b6cafcd3e2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>jonCraftsCode</title>
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  </head>
 
-    h1 {
-        font-family: 'Permanent Marker', cursive;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 10%;
-    }
+  <header>
+    <h1>jonCraftsCode</h1>
+    <nav>
+      <ul>
+        <li class="homeNav">
+          <a href="https://www.joncraftscode.com/">Home</a>
+        </li>
+        <li class="aboutNav">
+          <a href="#aboutInfo">About me</a>
+        </li>
+        <li class="skills">
+          <a href="#skillsInfo">Skills</a>
+        </li>
+        <li class="PortfolioNav">
+          <a href="#portfolioInfo">Portfolio</a>
+        </li>
+        <li class="contactNav">
+          <a href="#contactInfo">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h2>Front-end web developer</h2>
+      <a href="#portfolioInfo">see work</a>
+    </section>
+  </header>
 
-    body {
-        background-color: royalblue;
-    }
-</style>
-<body>
-    <h1>Site coming soon!!!</h1>
-</body>
+  <body>
+    <main>
+      <section class="aboutInfo" id="aboutInfo">
+        <h3>About me</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+          labore excepturi quaerat quisquam voluptatem, ut dolores veritatis!
+          Repudiandae, corrupti deleniti! Quisquam itaque quo quaerat eligendi
+          fuga aspernatur culpa veritatis ducimus. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Esse, tempore reprehenderit. Id,
+          corporis at. Fugit error, accusamus distinctio nostrum, necessitatibus
+          tempora similique voluptatum accusantium, cumque praesentium unde eum
+          nemo amet!
+        </p>
+      </section>
+
+      <section class="skillsInfo" id="skillsInfo">
+        <h3>Skills</h3>
+        <div>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <!-- <i class="fab fa-js-square"></i> -->
+          <i class="fab fa-js"></i>
+          <i class="fab fa-sass"></i>
+          <i class="fab fa-react"></i>
+          <i class="fas fa-universal-access"></i>
+        </div>
+      </section>
+
+      <section class="portfolioInfo" id="portfolioInfo">PORTFOLIO</section>
+
+      <section class="contactInfo" id="contactInfo">CONTACT</section>
+    </main>
+
+    <footer>
+      <p>Created by jonCraftsCode</p>
+    </footer>
+  </body>
 </html>
