@@ -429,7 +429,7 @@ header {
   text-align: center;
 }
 
-.skillsTitle {
+.abc {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -451,4 +451,11 @@ header {
           transform: translate(-50%, 0);
   display: block;
   z-index: -1;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: red;
 }

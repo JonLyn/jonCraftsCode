@@ -3,7 +3,7 @@
 //   z-index: 10;
 // }
 
-.skillsTitle {
+.abc {
   font-family: $secondaryFont;
   font-size: 3rem;
   text-align: center;
@@ -25,3 +25,13 @@
   display: block;
   z-index: -1;
 }
+
+.icons {
+  display: flex;
+  color: red;
+}
+
+// .skillsIcons i {
+//   display: inline;
+//   color: red;
+// }
