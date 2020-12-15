@@ -1,0 +1,27 @@
+// .skillInfo {
+//   position: relative;
+//   z-index: 10;
+// }
+
+.skillsTitle {
+  font-family: $secondaryFont;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 60px;
+  position: relative;
+  text-align: center;
+}
+
+.skillsTitle::after {
+  content: "01";
+  color: rgba(73, 211, 142, 0.548);
+  font-family: $primaryFont;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
+}

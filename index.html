@@ -11,9 +11,9 @@
     <title>jonCraftsCode</title>
   </head>
 
-  <header>
-    <h1>jonCraftsCode</h1>
-    <nav>
+  <header class="wrapper">
+    <nav class="navigation contentWrapper">
+      <h1 class="logo">jonCraftsCode</h1>
       <ul>
         <li class="homeNav">
           <a href="https://www.joncraftscode.com/">Home</a>
@@ -29,22 +29,60 @@
         </li>
         <li class="contactNav">
           <a href="#contactInfo">Contact</a>
-          <form action="">
-            <input type="text" />
-            <input type="email" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </form>
         </li>
       </ul>
     </nav>
     <section class="hero">
-      <h2>Front-end web developer</h2>
-      <a href="#portfolioInfo">see work</a>
+      <h2 class="iAmA">
+        I am a
+        <span class="webDeveloper">
+          <svg
+            width="94"
+            height="39"
+            viewBox="0 0 94 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo"
+              stroke="#000"
+              stroke-width="1"
+              d="M53.1252 2.07692L53.3277 1.42798H52.6479H46.8879H46.5047L46.4051 1.7981L38.9351 29.5697L30.9204 1.78938L30.8161 1.42798H30.4399H24.4879H24.1144L24.0085 1.78622L15.8023 29.5424L8.20218 1.79589L8.10141 1.42798H7.71994H1.76794H1.08696L1.29089 2.07771L12.2989 37.1497L12.4088 37.5H12.7759H18.7919H19.1627L19.2704 37.1452L27.2399 10.8819L35.2095 37.1452L35.3172 37.5H35.6879H41.7039H42.0717L42.1812 37.1489L53.1252 2.07692Z"
+              stroke="black"
+            />
+            <path
+              class="logo"
+              stroke="#000"
+              stroke-width="1"
+              d="M92.736 22.14H93.1869L93.2333 21.6914C93.3629 20.439 93.428 19.2484 93.428 18.12C93.428 14.846 92.7073 11.9031 91.2548 9.30435C89.8443 6.66149 87.8143 4.58889 85.1745 3.09298C82.5299 1.59437 79.4988 0.85199 76.096 0.85199C72.6078 0.85199 69.4923 1.61565 66.7633 3.15591C64.0738 4.65528 61.9802 6.81748 60.4864 9.62941C58.9912 12.4439 58.252 15.7057 58.252 19.4C58.252 23.0968 59.0136 26.3805 60.5517 29.237L60.5533 29.2399C62.0891 32.0483 64.2015 34.2287 66.8871 35.7697L66.8902 35.7714C69.6175 37.311 72.6903 38.076 76.096 38.076C80.3634 38.076 83.9722 37.0077 86.89 34.8415L86.8939 34.8385C89.7962 32.6398 91.7373 29.7953 92.7056 26.3181L92.8822 25.684H92.224H85.952H85.5965L85.4797 26.0197C84.8318 27.8825 83.7025 29.3752 82.0822 30.5097C80.5205 31.5905 78.536 32.148 76.096 32.148C73.1399 32.148 70.6369 31.2286 68.5587 29.3966C66.6487 27.6375 65.5333 25.2344 65.2441 22.14H92.736ZM85.0122 11.4669L85.0122 11.4669L85.0153 11.472C85.8659 12.8403 86.3346 14.4784 86.4032 16.404H65.3237C65.6873 13.4394 66.7972 11.1417 68.6239 9.46632C70.6177 7.67672 73.0137 6.77999 75.84 6.77999C77.8163 6.77999 79.5929 7.19113 81.1798 8.0049L81.1866 8.00837L81.1934 8.01163C82.8114 8.78017 84.0814 9.92902 85.0122 11.4669Z"
+              stroke="black"
+            />
+          </svg>
+        </span>
+      </h2>
+      <a href="#portfolioInfo" class="seeWorkButton">See works</a>
     </section>
+    <div class="heroTriangles">
+      <div class="leftHeroTriangle"></div>
+      <div class="rightHeroTriangle"></div>
+    </div>
   </header>
 
   <body>
     <main>
+      <section class="skillsInfo" id="skillsInfo">
+        <h3 class="skillsTitle">Skills</h3>
+        <div>
+          <p><i class="fab fa-html5"></i>Html5</p>
+          <p><i class="fab fa-css3-alt"></i>Css3</p>
+          <p><i class="fab fa-js"></i>Javascript</p>
+          <p><i class="fab fa-sass"></i>Sass/scss</p>
+          <p><i class="fab fa-react"></i>React js</p>
+          <p><i class="fab fa-github"></i>Github</p>
+          <p><i class="fas fa-universal-access"></i>Wcag accessibility</p>
+        </div>
+      </section>
+
       <section class="aboutInfo" id="aboutInfo">
         <h3>About me</h3>
         <p>
@@ -59,26 +97,23 @@
         </p>
       </section>
 
-      <section class="skillsInfo" id="skillsInfo">
-        <h3>Skills</h3>
-        <div>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <!-- <i class="fab fa-js-square"></i> -->
-          <i class="fab fa-js"></i>
-          <i class="fab fa-sass"></i>
-          <i class="fab fa-react"></i>
-          <i class="fas fa-universal-access"></i>
-        </div>
+      <section class="portfolioInfo" id="portfolioInfo">
+        <h3>My work</h3>
       </section>
 
-      <section class="portfolioInfo" id="portfolioInfo">PORTFOLIO</section>
-
-      <section class="contactInfo" id="contactInfo">CONTACT</section>
+      <section class="contactInfo" id="contactInfo">
+        <h3>Contact me</h3>
+        <form action="">
+          <input type="text" />
+          <input type="email" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+      </section>
     </main>
 
     <footer>
       <p>Created by jonCraftsCode</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

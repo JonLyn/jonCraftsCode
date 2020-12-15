@@ -1,0 +1,25 @@
+.navigation {
+  font-family: $primaryFont;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.navigation ul {
+  display: flex;
+  & li {
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    & a {
+      color: black;
+    }
+  }
+}
+
+.logo {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}

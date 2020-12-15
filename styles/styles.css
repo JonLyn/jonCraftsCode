@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -270,14 +271,184 @@ html {
   overflow: hidden;
 }
 
-h1 {
-  font-family: "Permanent Marker", cursive;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 10%;
+*,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  background-color: royalblue;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.contentWrapper {
+  width: 1300px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../assets/el-alce-web-y9Cj2fwLl7A-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.heroTriangles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leftHeroTriangle {
+  width: 50%;
+  height: 20vh;
+  border-left: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.rightHeroTriangle {
+  width: 50%;
+  height: 20vh;
+  border-right: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.iAmA {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 12%;
+}
+
+.path {
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  -webkit-animation: dash 0.5s linear forwards;
+          animation: dash 0.5s linear forwards;
+}
+
+.path2 {
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+  -webkit-animation: dash 0.5s 0.5s linear forwards;
+          animation: dash 0.5s 0.5s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.seeWorkButton {
+  color: white;
+  text-transform: uppercase;
+  background-color: #49d38e;
+  width: 150px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: black 5px 5px 10px;
+          box-shadow: black 5px 5px 10px;
+}
+
+.navigation {
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navigation ul li a {
+  color: black;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.skillsTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 60px;
+  position: relative;
+  text-align: center;
+}
+
+.skillsTitle::after {
+  content: "01";
+  color: rgba(73, 211, 142, 0.548);
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
 }

@@ -1,0 +1,70 @@
+header {
+  background-image: url("../assets/el-alce-web-y9Cj2fwLl7A-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.heroTriangles {
+  display: flex;
+}
+
+.leftHeroTriangle {
+  width: 50%;
+  height: 20vh;
+  border-left: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.rightHeroTriangle {
+  width: 50%;
+  height: 20vh;
+  border-right: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.iAmA {
+  font-family: $secondaryFont;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 12%;
+}
+
+.path {
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: dash 0.5s linear forwards;
+}
+
+.path2 {
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+  animation: dash 0.5s 0.5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.seeWorkButton {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(73, 211, 142);
+  width: 150px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: black 5px 5px 10px;
+}

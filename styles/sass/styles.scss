@@ -1,16 +1,6 @@
 @import "setup";
+@import "typography";
+@import "utils";
 @import "hero";
-
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-
-h1 {
-  font-family: "Permanent Marker", cursive;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 10%;
-}
-
-body {
-  background-color: royalblue;
-}
+@import "navMenu";
+@import "skills";
