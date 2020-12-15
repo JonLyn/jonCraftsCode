@@ -429,7 +429,7 @@ header {
   text-align: center;
 }
 
-.abc {
+.skillsTitle {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -437,6 +437,7 @@ header {
   margin-top: 60px;
   position: relative;
   text-align: center;
+  color: #3b3b3b;
 }
 
 .skillsTitle::after {
@@ -453,9 +454,89 @@ header {
   z-index: -1;
 }
 
-.icons {
+.skillsIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: red;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.skillsIcons p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  width: 33%;
+  margin-bottom: 15px;
+}
+
+.skillsIcons i {
+  color: #49d38e;
+  font-size: 5rem;
+}
+
+.aboutInfo {
+  background-image: url("../assets/the-humantra-GD1OKxelNDg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.aboutTriangleTop {
+  width: 100%;
+  border-right: 100vw solid transparent;
+  border-top: 50vh solid white;
+}
+
+.aboutTriangleBottom {
+  width: 100%;
+  border-right: 100vw solid white;
+  border-top: 50vh solid transparent;
+}
+
+.aboutTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -60px;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+
+.aboutTitle::after {
+  content: "02";
+  color: rgba(73, 211, 142, 0.548);
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
+}
+
+.aboutContent {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-top: 50px;
 }

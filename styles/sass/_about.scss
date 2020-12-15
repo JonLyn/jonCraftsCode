@@ -1,0 +1,50 @@
+.aboutInfo {
+  background-image: url("../assets/the-humantra-GD1OKxelNDg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.aboutTriangleTop {
+  width: 100%;
+  border-right: 100vw solid transparent;
+  border-top: 50vh solid white;
+}
+
+.aboutTriangleBottom {
+  width: 100%;
+  border-right: 100vw solid white;
+  border-top: 50vh solid transparent;
+}
+
+.aboutTitle {
+  font-family: $secondaryFont;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -60px;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+
+.aboutTitle::after {
+  content: "02";
+  color: rgba(73, 211, 142, 0.548);
+  font-family: $primaryFont;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
+}
+
+.aboutContent {
+  font-family: $primaryFont;
+  color: white;
+  margin-top: 50px;
+}

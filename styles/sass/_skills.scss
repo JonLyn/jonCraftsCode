@@ -3,7 +3,7 @@
 //   z-index: 10;
 // }
 
-.abc {
+.skillsTitle {
   font-family: $secondaryFont;
   font-size: 3rem;
   text-align: center;
@@ -11,6 +11,7 @@
   margin-top: 60px;
   position: relative;
   text-align: center;
+  color: rgb(59, 59, 59);
 }
 
 .skillsTitle::after {
@@ -26,12 +27,23 @@
   z-index: -1;
 }
 
-.icons {
+.skillsIcons {
   display: flex;
-  color: red;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  & p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: $secondaryFont;
+    width: 33%;
+    margin-bottom: 15px;
+  }
+  & i {
+    color: rgb(73, 211, 142);
+    font-size: 5rem;
+  }
 }
-
-// .skillsIcons i {
-//   display: inline;
-//   color: red;
-// }
