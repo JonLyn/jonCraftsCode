@@ -354,11 +354,12 @@ header {
   margin-top: 12%;
 }
 
-.path {
+.logo {
   stroke-dasharray: 283;
   stroke-dashoffset: 283;
-  -webkit-animation: dash 0.5s linear forwards;
-          animation: dash 0.5s linear forwards;
+  -webkit-animation: dash 2s linear forwards;
+          animation: dash 2s linear forwards;
+  stroke: #278657;
 }
 
 .path2 {
@@ -391,8 +392,6 @@ header {
   text-align: center;
   margin-top: 30px;
   border-radius: 10px;
-  -webkit-box-shadow: black 5px 5px 10px;
-          box-shadow: black 5px 5px 10px;
 }
 
 .navigation {
@@ -422,7 +421,7 @@ header {
   color: black;
 }
 
-.logo {
+.jonLogo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: white;
@@ -441,7 +440,7 @@ header {
 }
 
 .skillsTitle::after {
-  content: "01";
+  content: "skills";
   color: rgba(73, 211, 142, 0.548);
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
@@ -514,7 +513,7 @@ header {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -60px;
+  margin-top: 50px;
   position: relative;
   text-align: center;
   color: white;
@@ -522,7 +521,7 @@ header {
 }
 
 .aboutTitle::after {
-  content: "02";
+  content: "profile";
   color: rgba(73, 211, 142, 0.548);
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
@@ -538,5 +537,49 @@ header {
 .aboutContent {
   font-family: "Poppins", sans-serif;
   color: white;
+  margin: 50px auto 100px;
+}
+
+.projectsTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
   margin-top: 50px;
+  position: relative;
+  text-align: center;
+  color: #3b3b3b;
+  z-index: 0;
+}
+
+.projectsTitle::after {
+  content: "projects";
+  color: rgba(73, 211, 142, 0.548);
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
+}
+
+.screenshotContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.portfolioInfo figure {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
 }

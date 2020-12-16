@@ -1,0 +1,43 @@
+.projectsTitle {
+  font-family: $secondaryFont;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+  color: rgb(59, 59, 59);
+  z-index: 0;
+}
+
+.projectsTitle::after {
+  content: "projects";
+  color: rgba(73, 211, 142, 0.548);
+  font-family: $primaryFont;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
+}
+
+// .aboutContent {
+//   font-family: $primaryFont;
+//   color: white;
+//   margin-top: 50px;
+// }
+
+.screenshotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.portfolioInfo figure {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}

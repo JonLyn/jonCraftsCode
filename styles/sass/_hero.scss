@@ -37,10 +37,11 @@ header {
   margin-top: 12%;
 }
 
-.path {
+.logo {
   stroke-dasharray: 283;
   stroke-dashoffset: 283;
-  animation: dash 0.5s linear forwards;
+  animation: dash 2s linear forwards;
+  stroke: rgb(39, 134, 87);
 }
 
 .path2 {
@@ -66,5 +67,5 @@ header {
   text-align: center;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: black 5px 5px 10px;
+  // box-shadow: black 5px 5px 10px;
 }
