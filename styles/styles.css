@@ -578,8 +578,54 @@ header {
   margin-top: 50px;
 }
 
-.portfolioInfo figure {
+.impuzzible,
+.flixmix,
+.aisleAttack,
+.bookClubReads {
+  position: relative;
   width: 300px;
   height: 300px;
-  overflow: hidden;
+  border: 2px solid #49d38e;
+}
+
+.impuzzibleCaption {
+  display: none;
+  width: 300px;
+  color: white;
+  background-color: #49d38e;
+  padding: 5px;
+  position: absolute;
+  top: -80px;
+}
+
+.impuzzibleCaption::after {
+  content: '';
+  border-top: 30px solid #49d38e;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+
+.impuzzible:hover > :first-child,
+.impuzzible:focus > :first-child {
+  display: block;
+}
+
+.contactInfo {
+  background-color: rgba(73, 211, 142, 0.548);
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
