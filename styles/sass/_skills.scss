@@ -12,16 +12,16 @@
   position: relative;
   text-align: center;
   color: rgb(59, 59, 59);
+  padding-top: 50px;
 }
 
-.skillsTitle::after {
-  content: "skills";
-  color: rgba(73, 211, 142, 0.548);
+.skillsTitle span {
+  color: rgb(86, 224, 155);
   font-family: $primaryFont;
   font-size: 8rem;
   position: absolute;
   left: 50%;
-  top: -30px;
+  top: 20px;
   transform: translate(-50%, 0);
   display: block;
   z-index: -1;

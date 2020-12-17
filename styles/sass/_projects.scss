@@ -7,33 +7,31 @@
   position: relative;
   text-align: center;
   color: rgb(59, 59, 59);
-  z-index: 0;
+  padding-top: 30px;
 }
 
-.projectsTitle::after {
-  content: "projects";
-  color: rgba(73, 211, 142, 0.548);
+.projectsTitle span {
+  color: rgb(86, 224, 155);
   font-family: $primaryFont;
   font-size: 8rem;
   position: absolute;
   left: 50%;
-  top: -30px;
+  top: 0;
   transform: translate(-50%, 0);
   display: block;
   z-index: -1;
 }
 
-// .aboutContent {
-//   font-family: $primaryFont;
-//   color: white;
-//   margin-top: 50px;
-// }
-
 .screenshotContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin: 100px 0 50px;
+}
+
+.screenshotContainer span {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .impuzzible,
@@ -44,32 +42,56 @@
   width: 300px;
   height: 300px;
   border: 2px solid rgb(73, 211, 142);
+  margin: 20px;
 }
 
-.impuzzibleCaption {
+.impuzzibleCaption,
+.flixmixCaption,
+.aisleAttackCaption,
+.bCRCaption {
   display: none;
-  width: 300px;
+  width: 330px;
   color: white;
   background-color: rgb(73, 211, 142);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 5px;
   position: absolute;
-  top: -80px;
-  
+  left: -17px;
 }
 
-.impuzzibleCaption::after {
+.aisleAttackCaption,
+.flixmixCaption {
+  top: -60px;
+}
+
+.impuzzibleCaption,
+.bCRCaption {
+    top: -80px;
+}
+
+.impuzzibleCaption::after,
+.flixmixCaption::after,
+.aisleAttackCaption::after,
+.bCRCaption::after {
   content: '';
   border-top: 30px solid rgb(73, 211, 142);
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
+  border-left: 165px solid transparent;
+  border-right: 165px solid transparent;
   position: absolute;
   left: 0;
   bottom: -30px;
 }
 
 .impuzzible:hover > :first-child,
-.impuzzible:focus > :first-child {
+.impuzzible:focus > :first-child,
+.flixmix:hover > :first-child,
+.flixmix:focus > :first-child,
+.aisleAttack:hover > :first-child,
+.aisleAttack:focus > :first-child,
+.bookClubReads:hover > :first-child,
+.bookClubReads:focus > :first-child {
   display: block;
 }
 
-
+   

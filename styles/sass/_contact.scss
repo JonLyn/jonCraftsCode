@@ -1,13 +1,61 @@
+.contactTriangleTop {
+  border-left: 100vw solid rgb(73, 211, 142);
+  border-top: 50vh solid white;
+}
+
 .contactInfo {
-  background-color: rgba(73, 211, 142, 0.548);
+  background-color: rgb(73, 211, 142);
+  position: relative;
+}
+
+.contactTitle {
+  font-family: $secondaryFont;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+
+.contactTitle span {
+  color: rgb(59, 59, 59);
+  font-family: $primaryFont;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  min-height: 350px;
 }
 
-.formContainer label {
+// .formContainer label {
   
+// }
+
+.leftContactTriangle {
+  width: 50%;
+  border-left: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.rightContactTriangle {
+  width: 50%;
+  border-right: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

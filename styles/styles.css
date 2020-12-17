@@ -437,16 +437,16 @@ header {
   position: relative;
   text-align: center;
   color: #3b3b3b;
+  padding-top: 50px;
 }
 
-.skillsTitle::after {
-  content: "skills";
-  color: rgba(73, 211, 142, 0.548);
+.skillsTitle span {
+  color: #56e09b;
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
   left: 50%;
-  top: -30px;
+  top: 20px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   display: block;
@@ -520,9 +520,8 @@ header {
   z-index: 0;
 }
 
-.aboutTitle::after {
-  content: "profile";
-  color: rgba(73, 211, 142, 0.548);
+.aboutTitle span {
+  color: #56e09b;
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
@@ -549,17 +548,16 @@ header {
   position: relative;
   text-align: center;
   color: #3b3b3b;
-  z-index: 0;
+  padding-top: 30px;
 }
 
-.projectsTitle::after {
-  content: "projects";
-  color: rgba(73, 211, 142, 0.548);
+.projectsTitle span {
+  color: #56e09b;
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
   left: 50%;
-  top: -30px;
+  top: 0;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   display: block;
@@ -575,7 +573,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin: 100px 0 50px;
+}
+
+.screenshotContainer span {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .impuzzible,
@@ -586,35 +589,91 @@ header {
   width: 300px;
   height: 300px;
   border: 2px solid #49d38e;
+  margin: 20px;
 }
 
-.impuzzibleCaption {
+.impuzzibleCaption,
+.flixmixCaption,
+.aisleAttackCaption,
+.bCRCaption {
   display: none;
-  width: 300px;
+  width: 330px;
   color: white;
   background-color: #49d38e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 5px;
   position: absolute;
+  left: -17px;
+}
+
+.aisleAttackCaption,
+.flixmixCaption {
+  top: -60px;
+}
+
+.impuzzibleCaption,
+.bCRCaption {
   top: -80px;
 }
 
-.impuzzibleCaption::after {
+.impuzzibleCaption::after,
+.flixmixCaption::after,
+.aisleAttackCaption::after,
+.bCRCaption::after {
   content: '';
   border-top: 30px solid #49d38e;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
+  border-left: 165px solid transparent;
+  border-right: 165px solid transparent;
   position: absolute;
   left: 0;
   bottom: -30px;
 }
 
 .impuzzible:hover > :first-child,
-.impuzzible:focus > :first-child {
+.impuzzible:focus > :first-child,
+.flixmix:hover > :first-child,
+.flixmix:focus > :first-child,
+.aisleAttack:hover > :first-child,
+.aisleAttack:focus > :first-child,
+.bookClubReads:hover > :first-child,
+.bookClubReads:focus > :first-child {
   display: block;
 }
 
+.contactTriangleTop {
+  border-left: 100vw solid #49d38e;
+  border-top: 50vh solid white;
+}
+
 .contactInfo {
-  background-color: rgba(73, 211, 142, 0.548);
+  background-color: #49d38e;
+  position: relative;
+}
+
+.contactTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+
+.contactTitle span {
+  color: #3b3b3b;
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  z-index: -1;
 }
 
 .formContainer {
@@ -625,7 +684,30 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 350px;
+}
+
+.leftContactTriangle {
+  width: 50%;
+  border-left: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.rightContactTriangle {
+  width: 50%;
+  border-right: 50vw solid white;
+  border-top: 20vh solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+footer {
+  margin-top: 50px;
+  height: 100px;
 }
