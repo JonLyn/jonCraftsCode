@@ -14,11 +14,12 @@
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  margin: 50px 0;
+  margin-bottom: 50px;
   position: relative;
   text-align: center;
   color: white;
   z-index: 0;
+  padding-top: 30px;
 }
 
 .contactTitle span {
@@ -27,7 +28,7 @@
   font-size: 8rem;
   position: absolute;
   left: 50%;
-  top: -30px;
+  top: 0;
   transform: translate(-50%, 0);
   display: block;
   z-index: -1;
@@ -38,15 +39,14 @@
   flex-direction: column;
   align-items: center;
   min-height: 350px;
+  margin-bottom: 20px;
 }
 
-.mapRouter {
-  overflow: hidden;
+.formContainer label {
+  color: rgb(59, 59, 59);
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
-// .formContainer label {
-  
-// }
 
 .leftContactTriangle {
   width: 50%;
@@ -63,4 +63,26 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.name,
+.email,
+.message {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  color: white;
+  background-color: rgb(59, 59, 59);
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  color: rgb(59, 59, 59);
+  background-color: white;
 }

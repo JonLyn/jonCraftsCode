@@ -15,9 +15,9 @@
     <nav class="navigation contentWrapper">
       <h1 class="jonLogo">jonCraftsCode</h1>
       <ul>
-        <li class="homeNav">
+        <!-- <li class="homeNav">
           <a href="https://www.joncraftscode.com/">Home</a>
-        </li>
+        </li> -->
         <li class="aboutNav">
           <a href="#aboutInfo">About me</a>
         </li>
@@ -89,9 +89,9 @@
         </div> 
       </section>
 
-      <section class="aboutInfo" id="aboutInfo">
+      <section class="aboutInfo">
         <div class="aboutTriangleTop"></div>
-        <h3 class="aboutTitle"><span>Profile</span>What I'm about</h3>
+        <h3 class="aboutTitle" id="aboutInfo"><span>Profile</span>What I'm about</h3>
         <p class="aboutContent contentWrapper">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
           labore excepturi quaerat quisquam voluptatem, ut dolores veritatis!
@@ -109,7 +109,7 @@
         <h3 class="projectsTitle"><span>Projects</span>What I've done</h3>
         <div class="screenshotContainer">
           <div class="impuzzible">
-            <div class="impuzzibleCaption">A drag and drop tile puzzle built with: <span>HTML, SCSS, Javascript, jQuery & jQueryUI</span></div>
+            <div class="impuzzibleCaption">Drag and drop tile puzzle built with: <span>HTML, SCSS, Javascript, jQuery & jQueryUI</span></div>
             <a href="https://nervous-snyder-45a12c.netlify.app/gamepage">
               <img
                 src="./assets/impuzzibleScreenshotSquare.jpg"
@@ -118,7 +118,7 @@
             </a>
           </div>
           <div class="flixmix">
-            <div class="flixmixCaption">A movie recommendation app built with: <span>HTML, SCSS, Javascript & APIs</span></div>
+            <div class="flixmixCaption">Movie recommendation app built with: <span>HTML, SCSS, Javascript & APIs</span></div>
             <a href="https://juno-pair-project.github.io/swethaJonathanProjectFour/">
               <img
                 src="./assets/flixmixScreenshotSquare.jpg"
@@ -127,7 +127,7 @@
             </a>
           </div>
           <div class="aisleAttack">
-            <div class="aisleAttackCaption">A grocery list app built with: <span>HTML, SCSS, React JS & Firebase DB</span></div>
+            <div class="aisleAttackCaption">Grocery list app built with: <span>HTML, SCSS, React JS & Firebase DB</span></div>
             <a href="https://jonlyn.github.io/jonathan-lyn-project-five/">
               <img
                 src="./assets/aisleAttackScreenshotSquare.jpg"
@@ -136,7 +136,7 @@
             </a>
           </div>
           <div class="bookClubReads">
-            <div class="bCRCaption">A book search and library app built with: <span>HTML, SCSS, React JS, APIs & Firebase DB</span></div>
+            <div class="bCRCaption">Book search and library app built with: <span>HTML, SCSS, React JS, APIs & Firebase DB</span></div>
             <a href="https://brittany-marielle-martin-jon-project-6.github.io/book-club-reads">
               <img
                 src="./assets/bookClubReadsScreenshotSquare.jpg"
@@ -147,22 +147,22 @@
         </div>
       </section>
 
-      <section class="contactInfo" id="contactInfo">
+      <section class="contactInfo" >
         <div class="contactTriangleTop"></div>
-        <h3 class=contactTitle><span>Contact</span>Get in touch</h3>
+        <h3 class=contactTitle id="contactInfo"><span>Contact</span>Get in touch</h3>
         <div class="contentWrapper">
           <form class="formContainer" action="https://formspree.io/f/xzbkjqoy" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="enter your name"required/>
+            <input type="text" id="name" name="name" class="name" placeholder="Please enter your name"required/>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" placeholder="enter your email" required/>
+            <input type="email" id="email" name="_replyto" class="email"placeholder="Please enter your email" required/>
             <label for="message">Message:</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="what would you like to tell me?" required></textarea>
-            <button type="submit">Send message</button>
+            <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Please enter your message" required></textarea>
+            <button type="submit" class="submitButton">Send message</button>
           </form>
         </div>
         <div class="googleMap">
-<div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=toronto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://sites.google.com/view/maps-api-v2/mapv2"></a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+<div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=toronto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://sites.google.com/view/maps-api-v2/mapv2"></a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
         </div>
          
         <div class="leftContactTriangle"></div>
@@ -171,7 +171,14 @@
     </main>
 
     <footer>
-      <p>Created by jonCraftsCode</p>
+      <h3 class='footerTitle'>Follow me</h3>
+      <a href="https://www.linkedin.com/in/jonathanlyn/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/jonCraftsCode?s=09">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <p class="craftedBy"><span>Carefully crafted by</span> jonCraftsCode</p>
     </footer>
     <script src="./script.js"></script>
   </body>
