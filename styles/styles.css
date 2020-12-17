@@ -690,6 +690,10 @@ header {
   min-height: 350px;
 }
 
+.mapRouter {
+  overflow: hidden;
+}
+
 .leftContactTriangle {
   width: 50%;
   border-left: 50vw solid white;
