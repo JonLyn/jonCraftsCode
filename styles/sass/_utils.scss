@@ -12,6 +12,7 @@ h3 {
 // Set default font size
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,4 +49,19 @@ html {
   width: 1300px;
   max-width: 80%;
   margin: 0 auto;
+}
+
+.jumpHome {
+  position: sticky;
+  z-index: 100;
+  top: 90vh;
+  text-align: right;
+  margin-right: 5vw;
+  & i {
+    color: rgb(73, 211, 142);
+    background-color: white;
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
 }
