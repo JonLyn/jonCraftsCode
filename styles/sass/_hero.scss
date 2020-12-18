@@ -69,6 +69,17 @@ path {
   border-radius: 10px;
   // box-shadow: black 5px 5px 10px;
 }
+.web {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .web svg,
+  .developer svg {
+    height: 43px;
+    width: 340px;
+  }
+}
 
 @media (max-width: 575px) {
   .jonLogo {

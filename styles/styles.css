@@ -416,6 +416,18 @@ path {
   border-radius: 10px;
 }
 
+.web {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .web svg,
+  .developer svg {
+    height: 43px;
+    width: 340px;
+  }
+}
+
 @media (max-width: 575px) {
   .jonLogo {
     font-size: 2.2rem;
