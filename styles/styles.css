@@ -324,7 +324,7 @@ html {
 }
 
 .jumpHome i {
-  color: #49d38e;
+  color: #02a661;
   background-color: white;
   font-size: 3rem;
   padding: 10px;
@@ -398,7 +398,7 @@ path {
 .seeWorkButton {
   color: white;
   text-transform: uppercase;
-  background-color: #49d38e;
+  background-color: #02a661;
   width: 150px;
   padding: 10px 15px;
   margin: 0 auto;
@@ -409,8 +409,11 @@ path {
 }
 
 @media (max-width: 575px) {
-  header {
-    height: 80vh;
+  .jonLogo {
+    font-size: 2.2rem;
+  }
+  .iAmA {
+    margin-top: 250px;
   }
 }
 
@@ -453,12 +456,13 @@ path {
 }
 
 .hamburgerLinks li {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .navLinks a,
 .hamburgerLinks a {
   color: white;
+  font-size: 2rem;
 }
 
 .jonLogo {
@@ -470,7 +474,6 @@ path {
 
 .hamburgerMenu {
   display: none;
-  padding-top: 30px;
 }
 
 .hamburgerBars {
@@ -493,13 +496,13 @@ path {
   width: 50px;
   height: 7px;
   margin-bottom: 5px;
-  background-color: #49d38e;
+  background-color: #02a661;
   display: block;
   border-radius: 5px;
 }
 
 @media (max-width: 575px) {
-  .navigation {
+  .navLinks {
     display: none;
   }
   .hamburgerMenu,
@@ -521,7 +524,7 @@ path {
 }
 
 .skillsTitle span {
-  color: #56e09b;
+  color: #02a6627e;
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
@@ -565,7 +568,7 @@ path {
 }
 
 .skillsIcons i {
-  color: #49d38e;
+  color: #02a661;
   font-size: 5rem;
 }
 
@@ -613,7 +616,7 @@ path {
 }
 
 .aboutTitle span {
-  color: #56e09b;
+  color: #02a6627e;
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
@@ -643,7 +646,7 @@ path {
 }
 
 .projectsTitle span {
-  color: #56e09b;
+  color: #02a6627e;
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
@@ -678,7 +681,8 @@ path {
 .bookClubReads {
   position: relative;
   width: 300px;
-  border: 2px solid #49d38e;
+  min-width: 300px;
+  border: 2px solid #02a661;
   margin: 20px;
   padding: 10px;
 }
@@ -690,7 +694,7 @@ path {
   display: none;
   width: 330px;
   color: white;
-  background-color: #49d38e;
+  background-color: #02a661;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 5px;
@@ -713,7 +717,7 @@ path {
 .aisleAttackCaption::after,
 .bCRCaption::after {
   content: '';
-  border-top: 30px solid #49d38e;
+  border-top: 30px solid #02a661;
   border-left: 165px solid transparent;
   border-right: 165px solid transparent;
   position: absolute;
@@ -730,6 +734,30 @@ path {
 .bookClubReads:hover > :first-child,
 .bookClubReads:focus > :first-child {
   display: block;
+}
+
+@media (max-width: 450px) {
+  .projectsTitle span {
+    font-size: 6rem;
+    top: 13px;
+  }
+  .impuzzibleCaption,
+  .flixmixCaption,
+  .aisleAttackCaption,
+  .bCRCaption {
+    width: 300px;
+    left: -2px;
+  }
+  .impuzzibleCaption::after,
+  .flixmixCaption::after,
+  .aisleAttackCaption::after,
+  .bCRCaption::after {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    position: absolute;
+    left: -2px;
+    bottom: -30px;
+  }
 }
 
 .contactTriangleTop {
@@ -757,7 +785,7 @@ path {
 }
 
 .contactTitle span {
-  color: #3b3b3b;
+  color: rgba(59, 59, 59, 0.767);
   font-family: "Poppins", sans-serif;
   font-size: 8rem;
   position: absolute;
@@ -827,6 +855,21 @@ path {
 .submitButton:focus {
   color: #3b3b3b;
   background-color: white;
+}
+
+@media (max-width: 650px) {
+  .name,
+  .email,
+  .message {
+    width: 75%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contactTitle span {
+    font-size: 6rem;
+    top: 13px;
+  }
 }
 
 footer {

@@ -26,12 +26,13 @@
 }
 
 .hamburgerLinks li {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .navLinks a,
 .hamburgerLinks a {
   color: white;
+  font-size: 2rem;
 }
 
 
@@ -45,7 +46,6 @@
 
 .hamburgerMenu {
   display: none;
-  padding-top: 30px;
 }
 
 .hamburgerBars {
@@ -61,7 +61,7 @@
   width: 50px;
   height: 7px;
   margin-bottom: 5px;
-  background-color:  rgb(73, 211, 142);
+  background-color:  $accent;
   display: block;
   border-radius: 5px;
 }
@@ -72,7 +72,7 @@
 
 
 @media (max-width: 575px) {
-  .navigation {
+  .navLinks {
     display: none;
   }
 

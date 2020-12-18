@@ -59,7 +59,7 @@ path {
 .seeWorkButton {
   color: white;
   text-transform: uppercase;
-  background-color: rgb(73, 211, 142);
+  background-color: $accent;
   width: 150px;
   padding: 10px 15px;
   margin: 0 auto;
@@ -71,7 +71,12 @@ path {
 }
 
 @media (max-width: 575px) {
-  header {
-    height: 80vh;
+  .jonLogo {
+    font-size: 2.2rem;
   }
+
+  .iAmA {
+    margin-top: 250px;
+  }
+
 }

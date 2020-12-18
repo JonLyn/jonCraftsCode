@@ -16,7 +16,7 @@
 }
 
 .skillsTitle span {
-  color: rgb(86, 224, 155);
+  color: #02a6627e;
   font-family: $primaryFont;
   font-size: 8rem;
   position: absolute;
@@ -45,7 +45,7 @@
     text-align: center;
   }
   & i {
-    color: rgb(73, 211, 142);
+    color: $accent;
     font-size: 5rem;
   }
 }
