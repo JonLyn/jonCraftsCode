@@ -1,3 +1,7 @@
+// Colour palette
+$accent: #02a661;
+// rgb(73, 211, 142);
+
 // Reset styles
 *,
 h1,
@@ -54,7 +58,7 @@ html {
 .jumpHome {
   position: sticky;
   z-index: 100;
-  top: 90vh;
+  top: 90%;
   text-align: right;
   margin-right: 5vw;
   & i {

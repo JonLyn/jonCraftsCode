@@ -4,20 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/b6cafcd3e2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <title>jonCraftsCode</title>
   </head>
-
+  
   <header class="wrapper" id="home">
     <nav class="navigation contentWrapper">
       <h1 class="jonLogo">jonCraftsCode</h1>
-      <ul>
-        <!-- <li class="homeNav">
-          <a href="https://www.joncraftscode.com/">Home</a>
-        </li> -->
+      <ul class="navLinks">
+        <li class="aboutNav">
+          <a href="#aboutInfo">About me</a>
+        </li>
+        <li class="skills">
+          <a href="#skillsInfo">Skills</a>
+        </li>
+        <li class="projectsNav">
+          <a href="#projectsInfo">Portfolio</a>
+        </li>
+        <li class="contactNav">
+          <a href="#contactInfo">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="hamburgerMenu contentWrapper">
+      <div class="hamburgerBars" aria-label="Dropdown menu">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+      <ul class="hamburgerLinks">
         <li class="aboutNav">
           <a href="#aboutInfo">About me</a>
         </li>
@@ -35,29 +56,8 @@
     <section class="hero">
       <h2 class="iAmA">
         I am a
-        <span class="webDeveloper">
-          <svg
-            width="94"
-            height="39"
-            viewBox="0 0 94 39"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              class="logo"
-              stroke="#000"
-              stroke-width="1"
-              d="M53.1252 2.07692L53.3277 1.42798H52.6479H46.8879H46.5047L46.4051 1.7981L38.9351 29.5697L30.9204 1.78938L30.8161 1.42798H30.4399H24.4879H24.1144L24.0085 1.78622L15.8023 29.5424L8.20218 1.79589L8.10141 1.42798H7.71994H1.76794H1.08696L1.29089 2.07771L12.2989 37.1497L12.4088 37.5H12.7759H18.7919H19.1627L19.2704 37.1452L27.2399 10.8819L35.2095 37.1452L35.3172 37.5H35.6879H41.7039H42.0717L42.1812 37.1489L53.1252 2.07692Z"
-              stroke="black"
-            />
-            <path
-              class="logo"
-              stroke="#000"
-              stroke-width="1"
-              d="M92.736 22.14H93.1869L93.2333 21.6914C93.3629 20.439 93.428 19.2484 93.428 18.12C93.428 14.846 92.7073 11.9031 91.2548 9.30435C89.8443 6.66149 87.8143 4.58889 85.1745 3.09298C82.5299 1.59437 79.4988 0.85199 76.096 0.85199C72.6078 0.85199 69.4923 1.61565 66.7633 3.15591C64.0738 4.65528 61.9802 6.81748 60.4864 9.62941C58.9912 12.4439 58.252 15.7057 58.252 19.4C58.252 23.0968 59.0136 26.3805 60.5517 29.237L60.5533 29.2399C62.0891 32.0483 64.2015 34.2287 66.8871 35.7697L66.8902 35.7714C69.6175 37.311 72.6903 38.076 76.096 38.076C80.3634 38.076 83.9722 37.0077 86.89 34.8415L86.8939 34.8385C89.7962 32.6398 91.7373 29.7953 92.7056 26.3181L92.8822 25.684H92.224H85.952H85.5965L85.4797 26.0197C84.8318 27.8825 83.7025 29.3752 82.0822 30.5097C80.5205 31.5905 78.536 32.148 76.096 32.148C73.1399 32.148 70.6369 31.2286 68.5587 29.3966C66.6487 27.6375 65.5333 25.2344 65.2441 22.14H92.736ZM85.0122 11.4669L85.0122 11.4669L85.0153 11.472C85.8659 12.8403 86.3346 14.4784 86.4032 16.404H65.3237C65.6873 13.4394 66.7972 11.1417 68.6239 9.46632C70.6177 7.67672 73.0137 6.77999 75.84 6.77999C77.8163 6.77999 79.5929 7.19113 81.1798 8.0049L81.1866 8.00837L81.1934 8.01163C82.8114 8.78017 84.0814 9.92902 85.0122 11.4669Z"
-              stroke="black"
-            />
-          </svg>
+        <span class="webDeveloper"> 
+          Web developer
         </span>
       </h2>
       <a href="#projectsInfo" class="seeWorkButton">See works</a>
@@ -71,26 +71,21 @@
   <body>
     <main>
       <div class="jumpHome">
-        <a href="#home"><i class="fas fa-angle-double-up"></i></a>
+        <a href="#home" aria-label="jump to navigation bar"><i class="fas fa-angle-double-up"></i></a>
       </div>
       <section class="skillsInfo contentWrapper" id="skillsInfo">
         <h3 class="skillsTitle"><span>Skills</span>What I can do</h3>
         <div class="skillsIcons">
-          <p><i class="fab fa-html5"></i>Html5</p>
-          <p><i class="fab fa-css3-alt"></i>Css3</p>
-          <p><i class="fab fa-js"></i>Javascript</p>
-          <p><i class="fab fa-sass"></i>Sass/scss</p>
+          <p data-aos="fade-down-right"><i class="fab fa-html5"></i>Html5</p>
+          <p data-aos="fade-down"><i class="fab fa-css3-alt"></i>Css3</p>
+          <p data-aos="fade-down-left"><i class="fab fa-js"></i>Javascript</p>
+          <p data-aos="fade-right"><i class="fab fa-sass"></i>Sass/scss</p>
           <p><i class="fab fa-react"></i>React js</p>
-          <p><i class="fab fa-github"></i>Github</p>
-          <p><i class="fas fa-database"></i>NoSQL</p>
-          <p><i class="fas fa-universal-access"></i>Wcag accessibility</p>
-          <p><i class="fas fa-mobile-alt"></i>Responsive design</p>
-          <!-- <p>
-            <img
-              src="./assets/iconfinder_firebase_4691533.svg"
-              alt="google firebase logo"
-            />Firebase
-          </p> -->
+          <p data-aos="fade-left"><i class="fas fa-database""></i>NoSQL</p>
+          <!-- <p data-aos="fade-left"><i class="fab fa-github"></i>Github</p> -->
+          <p data-aos="fade-up"><i class="fas fa-universal-access"></i>Wcag accessibility</p>
+          <p data-aos="fade-up-right"><i class="fab fa-github"></i>Github</p>
+          <p data-aos="fade-up-left"><i class="fas fa-mobile-alt"></i>Responsive design</p>
         </div> 
       </section>
 
@@ -113,8 +108,8 @@
       <section class="projectsInfo contentWrapper" id="projectsInfo">
         <h3 class="projectsTitle"><span>Projects</span>What I've done</h3>
         <div class="screenshotContainer">
-          <div class="impuzzible">
-            <div class="impuzzibleCaption">Drag and drop tile puzzle built with: <span>HTML, SCSS, Javascript, jQuery & jQueryUI</span></div>
+          <div class="impuzzible" data-aos="flip-left">
+            <div class="impuzzibleCaption">Drag and drop tile puzzle crafted with: <span>HTML, SCSS, Javascript, jQuery & jQueryUI</span></div>
             <a href="https://nervous-snyder-45a12c.netlify.app/gamepage">
               <img
                 src="./assets/impuzzibleScreenshotSquare.jpg"
@@ -122,8 +117,8 @@
               />
             </a>
           </div>
-          <div class="flixmix">
-            <div class="flixmixCaption">Movie recommendation app built with: <span>HTML, SCSS, Javascript & APIs</span></div>
+          <div class="flixmix" data-aos="flip-left">
+            <div class="flixmixCaption">Movie recommendation app crafted with: <span>HTML, SCSS, Javascript & Rest API</span></div>
             <a href="https://juno-pair-project.github.io/swethaJonathanProjectFour/">
               <img
                 src="./assets/flixmixScreenshotSquare.jpg"
@@ -131,8 +126,8 @@
               />
             </a>
           </div>
-          <div class="aisleAttack">
-            <div class="aisleAttackCaption">Grocery list app built with: <span>HTML, SCSS, React JS & Firebase DB</span></div>
+          <div class="aisleAttack" data-aos="flip-left">
+            <div class="aisleAttackCaption">Grocery list app crafted with: <span>HTML, SCSS, React JS & Firebase DB</span></div>
             <a href="https://jonlyn.github.io/jonathan-lyn-project-five/">
               <img
                 src="./assets/aisleAttackScreenshotSquare.jpg"
@@ -140,8 +135,8 @@
               />
             </a>
           </div>
-          <div class="bookClubReads">
-            <div class="bCRCaption">Book search and library app built with: <span>HTML, SCSS, React JS, APIs & Firebase DB</span></div>
+          <div class="bookClubReads" data-aos="flip-left">
+            <div class="bCRCaption">Book search and library app crafted with: <span>HTML, SCSS, React JS, Rest API & Firebase DB</span></div>
             <a href="https://brittany-marielle-martin-jon-project-6.github.io/book-club-reads">
               <img
                 src="./assets/bookClubReadsScreenshotSquare.jpg"
@@ -152,7 +147,7 @@
         </div>
       </section>
 
-      <section class="contactInfo" >
+      <section class="contactInfo">
         <div class="contactTriangleTop"></div>
         <h3 class=contactTitle id="contactInfo"><span>Contact</span>Get in touch</h3>
         <div class="contentWrapper">
@@ -167,9 +162,8 @@
           </form>
         </div>
         <div class="googleMap">
-<div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=toronto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://sites.google.com/view/maps-api-v2/mapv2"></a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=toronto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://sites.google.com/view/maps-api-v2/mapv2"></a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
         </div>
-         
         <div class="leftContactTriangle"></div>
         <div class="rightContactTriangle"></div>
       </section>
@@ -184,7 +178,7 @@
         <i class="fab fa-twitter"></i>
       </a>
       <p class="craftedBy"><span>Carefully crafted by</span> jonCraftsCode</p>
-    </footer>
+    </footer>    
     <script src="./script.js"></script>
   </body>
 </html>

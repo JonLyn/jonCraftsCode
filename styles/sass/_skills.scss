@@ -25,6 +25,7 @@
   transform: translate(-50%, 0);
   display: block;
   z-index: -1;
+  
 }
 
 .skillsIcons {
@@ -41,6 +42,7 @@
     font-family: $secondaryFont;
     width: 33%;
     margin-bottom: 15px;
+    text-align: center;
   }
   & i {
     color: rgb(73, 211, 142);
@@ -48,4 +50,14 @@
   }
 }
 
+
+@media (max-width: 575px) {
+  .skillsIcons p {
+    font-size: 1.6rem;
+  }
+
+  .skillsIcons i {
+    font-size: 3.5rem;
+  }
+}
 

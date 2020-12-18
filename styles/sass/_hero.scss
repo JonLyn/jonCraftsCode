@@ -1,5 +1,7 @@
 header {
   background-image: url("../assets/el-alce-web-y9Cj2fwLl7A-unsplash.jpg");
+  background-color:rgb(122, 122, 122);
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -39,18 +41,14 @@ header {
   margin-top: 12%;
 }
 
-.logo {
-  stroke-dasharray: 283;
-  stroke-dashoffset: 283;
-  animation: dash 2s linear forwards;
-  stroke: rgb(39, 134, 87);
+path {
+  stroke-dasharray: 1869;
+  stroke-dashoffset: 1869;
+  animation: dash 8s linear forwards;
+  // stroke: white;
+  // stroke-width: 3;
 }
 
-.path2 {
-  stroke-dasharray: 229;
-  stroke-dashoffset: 229;
-  animation: dash 0.5s 0.5s linear forwards;
-}
 
 @keyframes dash {
   to {
@@ -70,4 +68,10 @@ header {
   margin-top: 30px;
   border-radius: 10px;
   // box-shadow: black 5px 5px 10px;
+}
+
+@media (max-width: 575px) {
+  header {
+    height: 80vh;
+  }
 }

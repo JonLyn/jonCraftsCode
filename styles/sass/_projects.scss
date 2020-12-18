@@ -39,9 +39,10 @@
 .bookClubReads {
   position: relative;
   width: 300px;
-  height: 300px;
+  // height: 300px;
   border: 2px solid rgb(73, 211, 142);
   margin: 20px;
+  padding: 10px;
 }
 
 .impuzzibleCaption,
@@ -59,11 +60,11 @@
   left: -17px;
 }
 
-.aisleAttackCaption,
-.flixmixCaption {
+.aisleAttackCaption {
   top: -60px;
 }
 
+.flixmixCaption,
 .impuzzibleCaption,
 .bCRCaption {
     top: -80px;

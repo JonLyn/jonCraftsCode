@@ -1,11 +1,11 @@
 .contactTriangleTop {
-  border-left: 100vw solid rgb(73, 211, 142);
+  border-left: 100vw solid $accent;
   border-top: 50vh solid white;
   outline: none;
 }
 
 .contactInfo {
-  background-color: rgb(73, 211, 142);
+  background-color: $accent;
   position: relative;
 }
 
@@ -77,7 +77,7 @@
   color: white;
   background-color: rgb(59, 59, 59);
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 

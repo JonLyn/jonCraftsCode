@@ -318,7 +318,7 @@ html {
   position: -webkit-sticky;
   position: sticky;
   z-index: 100;
-  top: 90vh;
+  top: 90%;
   text-align: right;
   margin-right: 5vw;
 }
@@ -333,6 +333,8 @@ html {
 
 header {
   background-image: url("../assets/el-alce-web-y9Cj2fwLl7A-unsplash.jpg");
+  background-color: #7a7a7a;
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -374,19 +376,11 @@ header {
   margin-top: 12%;
 }
 
-.logo {
-  stroke-dasharray: 283;
-  stroke-dashoffset: 283;
-  -webkit-animation: dash 2s linear forwards;
-          animation: dash 2s linear forwards;
-  stroke: #278657;
-}
-
-.path2 {
-  stroke-dasharray: 229;
-  stroke-dashoffset: 229;
-  -webkit-animation: dash 0.5s 0.5s linear forwards;
-          animation: dash 0.5s 0.5s linear forwards;
+path {
+  stroke-dasharray: 1869;
+  stroke-dashoffset: 1869;
+  -webkit-animation: dash 8s linear forwards;
+          animation: dash 8s linear forwards;
 }
 
 @-webkit-keyframes dash {
@@ -414,6 +408,12 @@ header {
   border-radius: 10px;
 }
 
+@media (max-width: 575px) {
+  header {
+    height: 80vh;
+  }
+}
+
 .navigation {
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
@@ -425,20 +425,40 @@ header {
   padding-top: 20px;
 }
 
-.navigation ul {
+.navLinks,
+.hamburgerLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.navigation ul li {
-  margin: 0 10px;
+.navLinks li,
+.hamburgerLinks li {
+  margin: 0 10px 5px 0;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: right;
 }
 
-.navigation ul li a {
-  color: black;
+.hamburgerLinks {
+  display: none;
+  position: absolute;
+  right: 10%;
+  background-color: rgba(75, 75, 75, 0.8);
+  padding: 10px;
+}
+
+.hamburgerLinks li {
+  margin: 5px 0;
+}
+
+.navLinks a,
+.hamburgerLinks a {
+  color: white;
 }
 
 .jonLogo {
@@ -446,6 +466,46 @@ header {
   font-weight: 700;
   color: white;
   text-align: center;
+}
+
+.hamburgerMenu {
+  display: none;
+  padding-top: 30px;
+}
+
+.hamburgerBars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.top,
+.middle,
+.bottom {
+  width: 50px;
+  height: 7px;
+  margin-bottom: 5px;
+  background-color: #49d38e;
+  display: block;
+  border-radius: 5px;
+}
+
+@media (max-width: 575px) {
+  .navigation {
+    display: none;
+  }
+  .hamburgerMenu,
+  .open {
+    display: block;
+  }
 }
 
 .skillsTitle {
@@ -501,6 +561,7 @@ header {
   font-family: "Raleway", sans-serif;
   width: 33%;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .skillsIcons i {
@@ -508,8 +569,19 @@ header {
   font-size: 5rem;
 }
 
+@media (max-width: 575px) {
+  .skillsIcons p {
+    font-size: 1.6rem;
+  }
+  .skillsIcons i {
+    font-size: 3.5rem;
+  }
+}
+
 .aboutInfo {
   background-image: url("../assets/the-humantra-GD1OKxelNDg-unsplash.jpg");
+  background-color: #7a7a7a;
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -606,9 +678,9 @@ header {
 .bookClubReads {
   position: relative;
   width: 300px;
-  height: 300px;
   border: 2px solid #49d38e;
   margin: 20px;
+  padding: 10px;
 }
 
 .impuzzibleCaption,
@@ -626,11 +698,11 @@ header {
   left: -17px;
 }
 
-.aisleAttackCaption,
-.flixmixCaption {
+.aisleAttackCaption {
   top: -60px;
 }
 
+.flixmixCaption,
 .impuzzibleCaption,
 .bCRCaption {
   top: -80px;
@@ -661,13 +733,13 @@ header {
 }
 
 .contactTriangleTop {
-  border-left: 100vw solid #49d38e;
+  border-left: 100vw solid #02a661;
   border-top: 50vh solid white;
   outline: none;
 }
 
 .contactInfo {
-  background-color: #49d38e;
+  background-color: #02a661;
   position: relative;
 }
 
@@ -747,7 +819,7 @@ header {
   color: white;
   background-color: #3b3b3b;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
@@ -770,6 +842,9 @@ footer {
 
 .craftedBy {
   margin-top: 30px;
+  background-color: rgba(75, 75, 75, 0.8);
+  color: white;
+  padding: 5px 0;
 }
 
 footer a {
