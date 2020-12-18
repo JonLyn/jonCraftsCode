@@ -385,10 +385,10 @@ header {
 }
 
 path {
-  stroke-dasharray: 1869;
-  stroke-dashoffset: 1869;
-  -webkit-animation: dash 10s linear forwards;
-          animation: dash 10s linear forwards;
+  stroke-dasharray: 382;
+  stroke-dashoffset: 382;
+  -webkit-animation: dash 4s linear forwards;
+          animation: dash 4s linear forwards;
 }
 
 @-webkit-keyframes dash {
@@ -471,7 +471,6 @@ path {
   display: none;
   position: absolute;
   right: 10%;
-  background-color: rgba(75, 75, 75, 0.8);
   padding: 10px;
 }
 
@@ -483,6 +482,26 @@ path {
 .hamburgerLinks a {
   color: white;
   font-size: 2rem;
+}
+
+.navLinks a:hover,
+.navLinks a:focus,
+.hamburgerLinks a:hover,
+.hamburgerBars a:focus {
+  -webkit-animation: navSpace 0.6s ease forwards;
+          animation: navSpace 0.6s ease forwards;
+}
+
+@-webkit-keyframes navSpace {
+  to {
+    letter-spacing: 3px;
+  }
+}
+
+@keyframes navSpace {
+  to {
+    letter-spacing: 3px;
+  }
 }
 
 .jonLogo {
