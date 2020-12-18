@@ -27,7 +27,7 @@
 
 .hamburgerLinks li {
   margin: 15px 0;
-}
+}   
 
 .navLinks a,
 .hamburgerLinks a {
@@ -47,10 +47,6 @@
     letter-spacing: 3px;
   }
 }
-
-
-
-
 
 .jonLogo {
   font-family: $secondaryFont;
@@ -81,6 +77,43 @@
   border-radius: 5px;
 }
 
+.topAngle {
+  transform-origin: left;
+  animation: hamFadeTop .3s ease forwards;
+}
+
+.bottomAngle {
+  transform-origin: left;
+  animation: hamFadeBottom .3s ease forwards;
+}
+
+.middleHide {
+  visibility: hidden;
+  // animation: hamFade .5 ease forwards;
+}
+
+.topStraight {
+  animation: hamStraight .3s ease forwards;
+}
+
+@keyframes hamStraight {
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hamFadeTop {
+  to {
+    transform: rotate(28deg);
+  }
+}
+
+@keyframes hamFadeBottom {
+  to {
+    transform: rotate(-28deg);
+  }
+}
+
 
 
 
@@ -95,6 +128,4 @@
   .open {
     display: block;
   }
-
-
 }
