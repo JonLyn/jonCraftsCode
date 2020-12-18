@@ -511,6 +511,10 @@ path {
   }
 }
 
+.skillInfo {
+  overflow: hidden;
+}
+
 .skillsTitle {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
