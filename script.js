@@ -11,7 +11,6 @@ const hide = document.querySelector('.middle');
 bars.onclick = function () {
   dropdown.classList.toggle('open');
   topBar.classList.toggle('topAngle');
-  topBar.classList.toggle('topStraight');
   bottomBar.classList.toggle('bottomAngle');
   hide.classList.toggle('middleHide');
 }

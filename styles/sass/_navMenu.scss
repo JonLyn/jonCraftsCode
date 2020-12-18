@@ -21,7 +21,6 @@
   display: none;
   position: absolute;
   right: 10%;
-  // background-color: rgba(75, 75, 75, 0.8);
   padding: 10px;
 }
 
@@ -75,48 +74,25 @@
   background-color:  $accent;
   display: block;
   border-radius: 5px;
+  transition: transform 0.2s ease;
+  transform-origin: left;
 }
 
 .topAngle {
   transform-origin: left;
-  animation: hamFadeTop .3s ease forwards;
+  // animation: hamFadeTop .3s ease forwards;
+  transform: rotate(28deg);
 }
 
 .bottomAngle {
   transform-origin: left;
-  animation: hamFadeBottom .3s ease forwards;
+  transform: rotate(-28deg);
 }
 
 .middleHide {
   visibility: hidden;
-  // animation: hamFade .5 ease forwards;
+
 }
-
-.topStraight {
-  animation: hamStraight .3s ease forwards;
-}
-
-@keyframes hamStraight {
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes hamFadeTop {
-  to {
-    transform: rotate(28deg);
-  }
-}
-
-@keyframes hamFadeBottom {
-  to {
-    transform: rotate(-28deg);
-  }
-}
-
-
-
-
 
 
 @media (max-width: 575px) {
