@@ -40,8 +40,10 @@
   padding: 10px;
   width: 300px;
   height: 300px;
+  overflow: hidden;
 }
 
+.projectCaption,
 .impuzzibleCaption,
 .flixmixCaption,
 .aisleAttackCaption,
@@ -49,37 +51,74 @@
   opacity: 0;
   width: 330px;
   color: white;
-  background-color: $accent;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  // background-color: $accent;
+  // border-top-left-radius: 10px;
+  // border-top-right-radius: 10px;
+  // padding: 5px;
   position: absolute;
-  left: -17px;
+  // left: -17px;
   transition: all 0.4s ease;
+  left: 0;
+  top: 0;
+  padding: 35px 15px;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.aisleAttackCaption {
-  top: -60px;
+.projectLinks {
+  background-color: $accent;
+  position: absolute;
+  padding-bottom: 30px;
+  width: 300px;
+  bottom: -110px;
+  left: -2px;
+  transition: all 0.5s ease-out;
+  & a {
+    color: white;
+    font-size: 4rem;
+    margin: 10px;
+  }
 }
 
-.flixmixCaption,
-.impuzzibleCaption,
-.bCRCaption {
-  top: -80px;
-}
-
-.impuzzibleCaption::after,
-.flixmixCaption::after,
-.aisleAttackCaption::after,
-.bCRCaption::after {
+.projectLinks::before {
   content: "";
-  border-top: 30px solid $accent;
-  border-left: 165px solid transparent;
-  border-right: 165px solid transparent;
+  border-bottom: 70px solid $accent;
+  border-left: 300px solid transparent;
+  // border-right: 133px solid transparent;
   position: absolute;
   left: 0;
-  bottom: -30px;
+  top: -70px;
 }
+
+.projectContainer:hover .projectLinks {
+  bottom: 0;
+}
+
+// .aisleAttackCaption {
+//   top: -60px;
+// }
+
+// .flixmixCaption,
+// .impuzzibleCaption,
+// .bCRCaption {
+//   top: -80px;
+// }
+
+// .impuzzibleCaption::after,
+// .flixmixCaption::after,
+// .aisleAttackCaption::after,
+// .bCRCaption::after {
+//   content: "";
+//   border-top: 30px solid $accent;
+//   border-left: 165px solid transparent;
+//   border-right: 165px solid transparent;
+//   position: absolute;
+//   left: 0;
+//   bottom: -30px;
+// }
 
 .projectContainer:hover > :first-child,
 .projectContainer:focus > :first-child {
