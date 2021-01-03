@@ -17,12 +17,13 @@ h3 {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: $primaryFont;
   font-size: 1.6rem;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 // Remove list styles
@@ -38,11 +39,6 @@ a {
 img {
   width: 100%;
   display: block;
-}
-
-// Hide horizontal content overflow
-html {
-  overflow-x: hidden;
 }
 
 // .wrapper {
