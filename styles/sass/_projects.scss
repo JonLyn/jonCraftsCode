@@ -33,23 +33,20 @@
   text-transform: uppercase;
 }
 
-.impuzzible,
-.flixmix,
-.aisleAttack,
-.bookClubReads {
+.projectContainer {
   position: relative;
-  width: 300px;
-  min-width: 300px;
   border: 2px solid $accent;
   margin: 20px;
   padding: 10px;
+  width: 300px;
+  height: 300px;
 }
 
 .impuzzibleCaption,
 .flixmixCaption,
 .aisleAttackCaption,
 .bCRCaption {
-  display: none;
+  opacity: 0;
   width: 330px;
   color: white;
   background-color: $accent;
@@ -58,6 +55,7 @@
   padding: 5px;
   position: absolute;
   left: -17px;
+  transition: all 0.4s ease;
 }
 
 .aisleAttackCaption {
@@ -67,14 +65,14 @@
 .flixmixCaption,
 .impuzzibleCaption,
 .bCRCaption {
-    top: -80px;
+  top: -80px;
 }
 
 .impuzzibleCaption::after,
 .flixmixCaption::after,
 .aisleAttackCaption::after,
 .bCRCaption::after {
-  content: '';
+  content: "";
   border-top: 30px solid $accent;
   border-left: 165px solid transparent;
   border-right: 165px solid transparent;
@@ -83,15 +81,9 @@
   bottom: -30px;
 }
 
-.impuzzible:hover > :first-child,
-.impuzzible:focus > :first-child,
-.flixmix:hover > :first-child,
-.flixmix:focus > :first-child,
-.aisleAttack:hover > :first-child,
-.aisleAttack:focus > :first-child,
-.bookClubReads:hover > :first-child,
-.bookClubReads:focus > :first-child {
-  display: block;
+.projectContainer:hover > :first-child,
+.projectContainer:focus > :first-child {
+  opacity: 1;
 }
 
 @media (max-width: 450px) {

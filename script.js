@@ -7,6 +7,8 @@ const topBar = document.querySelector('.top');
 const bottomBar = document.querySelector('.bottom');
 const hide = document.querySelector('.middle');
 
+// const navLink = document.querySelector('.navLinks');
+
 
 bars.onclick = function () {
   dropdown.classList.toggle('open');
@@ -18,4 +20,6 @@ bars.onclick = function () {
 dropdownLink.onclick = function () {
   dropdown.classList.remove('open');
 }
+
+
 

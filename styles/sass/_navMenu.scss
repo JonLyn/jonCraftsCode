@@ -32,19 +32,14 @@
 .hamburgerLinks a {
   color: white;
   font-size: 2rem;
+  transition: all 0.6s ease;
 }
 
 .navLinks a:hover,
 .navLinks a:focus,
 .hamburgerLinks a:hover,
 .hamburgerBars a:focus {
-  animation: navSpace 0.6s ease forwards;
-}
-
-@keyframes navSpace {
-  to {
-    letter-spacing: 3px;
-  }
+  letter-spacing: 3px;
 }
 
 .jonLogo {
@@ -80,7 +75,6 @@
 
 .topAngle {
   transform-origin: left;
-  // animation: hamFadeTop .3s ease forwards;
   transform: rotate(28deg);
 }
 

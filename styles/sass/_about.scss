@@ -1,6 +1,6 @@
 .aboutInfo {
   background-image: url("../assets/the-humantra-GD1OKxelNDg-unsplash.jpg");
-    background-color:rgb(122, 122, 122);
+  background-color: rgb(122, 122, 122);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +46,9 @@
 
 .aboutContent {
   font-family: $primaryFont;
+  font-size: 1.8rem;
+  line-height: 1.5;
   color: white;
-  margin: 50px auto 100px;
+  margin: 50px auto;
+  max-width: 800px;
 }

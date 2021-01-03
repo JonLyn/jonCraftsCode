@@ -488,26 +488,15 @@ path {
 .hamburgerLinks a {
   color: white;
   font-size: 2rem;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .navLinks a:hover,
 .navLinks a:focus,
 .hamburgerLinks a:hover,
 .hamburgerBars a:focus {
-  -webkit-animation: navSpace 0.6s ease forwards;
-          animation: navSpace 0.6s ease forwards;
-}
-
-@-webkit-keyframes navSpace {
-  to {
-    letter-spacing: 3px;
-  }
-}
-
-@keyframes navSpace {
-  to {
-    letter-spacing: 3px;
-  }
+  letter-spacing: 3px;
 }
 
 .jonLogo {
@@ -636,7 +625,7 @@ path {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   width: 33%;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -703,8 +692,11 @@ path {
 
 .aboutContent {
   font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
   color: white;
-  margin: 50px auto 100px;
+  margin: 50px auto;
+  max-width: 800px;
 }
 
 .projectsTitle {
@@ -748,23 +740,20 @@ path {
   text-transform: uppercase;
 }
 
-.impuzzible,
-.flixmix,
-.aisleAttack,
-.bookClubReads {
+.projectContainer {
   position: relative;
-  width: 300px;
-  min-width: 300px;
   border: 2px solid #02a661;
   margin: 20px;
   padding: 10px;
+  width: 300px;
+  height: 300px;
 }
 
 .impuzzibleCaption,
 .flixmixCaption,
 .aisleAttackCaption,
 .bCRCaption {
-  display: none;
+  opacity: 0;
   width: 330px;
   color: white;
   background-color: #02a661;
@@ -773,6 +762,8 @@ path {
   padding: 5px;
   position: absolute;
   left: -17px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .aisleAttackCaption {
@@ -789,7 +780,7 @@ path {
 .flixmixCaption::after,
 .aisleAttackCaption::after,
 .bCRCaption::after {
-  content: '';
+  content: "";
   border-top: 30px solid #02a661;
   border-left: 165px solid transparent;
   border-right: 165px solid transparent;
@@ -798,15 +789,9 @@ path {
   bottom: -30px;
 }
 
-.impuzzible:hover > :first-child,
-.impuzzible:focus > :first-child,
-.flixmix:hover > :first-child,
-.flixmix:focus > :first-child,
-.aisleAttack:hover > :first-child,
-.aisleAttack:focus > :first-child,
-.bookClubReads:hover > :first-child,
-.bookClubReads:focus > :first-child {
-  display: block;
+.projectContainer:hover > :first-child,
+.projectContainer:focus > :first-child {
+  opacity: 1;
 }
 
 @media (max-width: 450px) {
