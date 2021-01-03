@@ -92,8 +92,42 @@
     display: none;
   }
 
-  .hamburgerMenu,
-  .open {
+  .hamburgerMenu {
     display: block;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .open {
+    animation: floatIn 0.7s ease;
+  }
+
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      right: -100px;
+    }
+    to {
+      opacity: 1;
+      right: 10%;
+    }
+  }
+
+  .close {
+    animation: floatOut 0.7s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes floatOut {
+    from {
+      opacity: 1;
+      right: 10%;
+    }
+    to {
+      opacity: 0;
+      right: -100px;
+    }
   }
 }

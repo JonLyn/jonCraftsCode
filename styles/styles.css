@@ -342,7 +342,7 @@ img {
 
 @media (max-width: 1000px) {
   .jumpHome {
-    top: 90%;
+    top: 88%;
     left: 90%;
   }
   .jumpHome i {
@@ -575,9 +575,61 @@ path {
   .navLinks {
     display: none;
   }
-  .hamburgerMenu,
-  .open {
+  .hamburgerMenu {
     display: block;
+  }
+  .show {
+    display: block;
+  }
+  .open {
+    -webkit-animation: floatIn 0.7s ease;
+            animation: floatIn 0.7s ease;
+  }
+  @-webkit-keyframes floatIn {
+    from {
+      opacity: 0;
+      right: -100px;
+    }
+    to {
+      opacity: 1;
+      right: 10%;
+    }
+  }
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      right: -100px;
+    }
+    to {
+      opacity: 1;
+      right: 10%;
+    }
+  }
+  .close {
+    -webkit-animation: floatOut 0.7s ease;
+            animation: floatOut 0.7s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes floatOut {
+    from {
+      opacity: 1;
+      right: 10%;
+    }
+    to {
+      opacity: 0;
+      right: -100px;
+    }
+  }
+  @keyframes floatOut {
+    from {
+      opacity: 1;
+      right: 10%;
+    }
+    to {
+      opacity: 0;
+      right: -100px;
+    }
   }
 }
 
