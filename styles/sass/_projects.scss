@@ -39,6 +39,7 @@
   margin: 20px;
   padding: 10px;
   width: 300px;
+  min-width: 300px;
   height: 300px;
   overflow: hidden;
 }
@@ -54,12 +55,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
-  // background-color: $accent;
-  // border-top-left-radius: 10px;
-  // border-top-right-radius: 10px;
-  // padding: 5px;
   position: absolute;
-  // left: -17px;
   transition: all 0.4s ease;
   left: 0;
   top: 0;
@@ -87,7 +83,6 @@
   content: "";
   border-bottom: 70px solid $accent;
   border-left: 300px solid transparent;
-  // border-right: 133px solid transparent;
   position: absolute;
   left: 0;
   top: -70px;
@@ -96,29 +91,6 @@
 .projectContainer:hover .projectLinks {
   bottom: 0;
 }
-
-// .aisleAttackCaption {
-//   top: -60px;
-// }
-
-// .flixmixCaption,
-// .impuzzibleCaption,
-// .bCRCaption {
-//   top: -80px;
-// }
-
-// .impuzzibleCaption::after,
-// .flixmixCaption::after,
-// .aisleAttackCaption::after,
-// .bCRCaption::after {
-//   content: "";
-//   border-top: 30px solid $accent;
-//   border-left: 165px solid transparent;
-//   border-right: 165px solid transparent;
-//   position: absolute;
-//   left: 0;
-//   bottom: -30px;
-// }
 
 .projectContainer:hover > :first-child,
 .projectContainer:focus > :first-child {
@@ -129,24 +101,5 @@
   .projectsTitle span {
     font-size: 6rem;
     top: 13px;
-  }
-
-  .impuzzibleCaption,
-  .flixmixCaption,
-  .aisleAttackCaption,
-  .bCRCaption {
-    width: 300px;
-    left: -2px;
-  }
-
-  .impuzzibleCaption::after,
-  .flixmixCaption::after,
-  .aisleAttackCaption::after,
-  .bCRCaption::after {
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    position: absolute;
-    left: -2px;
-    bottom: -30px;
   }
 }

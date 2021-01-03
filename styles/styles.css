@@ -297,6 +297,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 li {
@@ -696,7 +697,6 @@ path {
   line-height: 1.5;
   color: white;
   margin: 50px auto;
-  max-width: 800px;
 }
 
 .projectsTitle {
@@ -746,6 +746,7 @@ path {
   margin: 20px;
   padding: 10px;
   width: 300px;
+  min-width: 300px;
   height: 300px;
   overflow: hidden;
 }
@@ -810,23 +811,6 @@ path {
   .projectsTitle span {
     font-size: 6rem;
     top: 13px;
-  }
-  .impuzzibleCaption,
-  .flixmixCaption,
-  .aisleAttackCaption,
-  .bCRCaption {
-    width: 300px;
-    left: -2px;
-  }
-  .impuzzibleCaption::after,
-  .flixmixCaption::after,
-  .aisleAttackCaption::after,
-  .bCRCaption::after {
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    position: absolute;
-    left: -2px;
-    bottom: -30px;
   }
 }
 
