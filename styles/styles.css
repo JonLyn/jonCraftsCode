@@ -292,6 +292,9 @@ h3 {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+.overflowWrapper {
   overflow-x: hidden;
 }
 
