@@ -568,6 +568,7 @@ path {
 
 .skillInfo {
   overflow-x: hidden;
+  position: relative;
 }
 
 .skillsTitle {
