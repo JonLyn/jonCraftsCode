@@ -295,7 +295,7 @@ html {
 }
 
 .overflowWrapper {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
