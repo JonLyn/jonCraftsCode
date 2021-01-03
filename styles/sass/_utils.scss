@@ -72,3 +72,14 @@ img {
     border-radius: 5px;
   }
 }
+
+@media (max-width: 1000px) {
+  .jumpHome {
+    top: 90%;
+    left: 90%;
+    & i {
+      font-size: 2rem;
+      padding: 8px 6px;
+    }
+  }
+}
