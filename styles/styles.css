@@ -763,6 +763,19 @@ path {
   margin: 50px auto;
 }
 
+@media (max-width: 1000px) {
+  .aboutTriangleTop {
+    width: 100%;
+    border-right: 100vw solid transparent;
+    border-top: 20vh solid white;
+  }
+  .aboutTriangleBottom {
+    width: 100%;
+    border-right: 100vw solid white;
+    border-top: 20vh solid transparent;
+  }
+}
+
 .projectsTitle {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
