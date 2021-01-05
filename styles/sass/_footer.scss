@@ -20,6 +20,10 @@ footer a {
   font-size: 3rem;
   color: rgb(59, 59, 59);
   margin: 0 10px;
+  & :hover,
+    :focus {
+    color: $accent;
+  }
 }
 
 footer span {
