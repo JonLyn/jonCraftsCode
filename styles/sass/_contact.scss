@@ -87,6 +87,12 @@
   background-color: white;
 }
 
+@media (max-width: 1000px) {
+  .contactTriangleTop {
+  border-top: 20vh solid white;
+  }
+}
+
 @media (max-width: 650px) {
   .name,
   .email,

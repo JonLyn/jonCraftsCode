@@ -765,13 +765,9 @@ path {
 
 @media (max-width: 1000px) {
   .aboutTriangleTop {
-    width: 100%;
-    border-right: 100vw solid transparent;
     border-top: 20vh solid white;
   }
   .aboutTriangleBottom {
-    width: 100%;
-    border-right: 100vw solid white;
     border-top: 20vh solid transparent;
   }
 }
@@ -986,6 +982,12 @@ path {
 .submitButton:focus {
   color: #3b3b3b;
   background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .contactTriangleTop {
+    border-top: 20vh solid white;
+  }
 }
 
 @media (max-width: 650px) {
